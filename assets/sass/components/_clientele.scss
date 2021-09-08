@@ -2,7 +2,7 @@
   cursor: pointer;
 
   &:hover &__img {
-    border: 2px solid $color-primary;
+    box-shadow: 1px 0.2rem 2.5rem rgba(130, 35, 255, 0.2);
   }
   &:hover &__img img {
     filter: grayscale(0);
@@ -23,13 +23,14 @@
     -o-border-radius: 50%;
     width: 14rem !important;
     height: 14rem !important;
-    border: 2px solid #dfdddd;
+    border: 2px solid $violet-1;
     overflow: hidden;
-    transition: all 0.25s ease-out;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    -ms-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    box-shadow: 3px 0.5rem 2.5rem rgba(130, 35, 255, 0.2);
 
     img {
       position: relative;

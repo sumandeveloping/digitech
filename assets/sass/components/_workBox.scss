@@ -64,8 +64,8 @@
       padding: 3em;
       text-align: left;
       opacity: 0;
-      background: linear-gradient(to bottom, #428ae2 30%, #8223ff);
-      background: -webkit-linear-gradient(to bottom, #428ae2 30%, #8223ff);
+      background: linear-gradient(to bottom, #428ae2 30%, $violet-1);
+      background: -webkit-linear-gradient(to bottom, #428ae2 30%, $violet-1);
       transition: background 0.45s ease-in-out;
       -webkit-transition: background 0.45s ease-in-out;
       -moz-transition: background 0.45s ease-in-out;

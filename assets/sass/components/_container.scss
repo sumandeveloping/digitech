@@ -21,7 +21,9 @@
     -o-border-radius: 3px;
   }
   &--left {
-    background-color: $color-primary-light-1;
+    // background-color: $color-primary-light-1;
+    background: linear-gradient(to bottom, #2a5ff5 30%, $violet-1);
+    background: -webkit-linear-gradient(to bottom, #2a5ff5 30%, $violet-1);
   }
   &--right {
     background-color: $color-grey-dark-4;

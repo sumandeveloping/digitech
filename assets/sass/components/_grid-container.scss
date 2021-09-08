@@ -8,8 +8,8 @@
   grid-auto-rows: 40rem; // it defines all row size
   grid-auto-flow: row dense;
   .grid {
-    background: linear-gradient(to bottom, #428ae2 30%, #8223ff);
-    background: -webkit-linear-gradient(to bottom, #428ae2 30%, #8223ff);
+    background: linear-gradient(to bottom, #428ae2 30%, $violet-1);
+    background: -webkit-linear-gradient(to bottom, #428ae2 30%, $violet-1);
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -21,11 +21,11 @@
       filter: brightness(100%);
       -webkit-filter: brightness(100%);
       opacity: 0.3;
-      transform: perspective(80rem) rotateY(-30deg);
-      -webkit-transform: perspective(80rem) rotateY(-30deg);
-      -moz-transform: perspective(80rem) rotateY(-30deg);
-      -ms-transform: perspective(80rem) rotateY(-30deg);
-      -o-transform: perspective(80rem) rotateY(-30deg);
+      transform: perspective(80rem) rotateY(-34deg) rotateX(5deg);
+      -webkit-transform: perspective(80rem) rotateY(-34deg) rotateX(5deg);
+      -moz-transform: perspective(80rem) rotateY(-34deg) rotateX(5deg);
+      -ms-transform: perspective(80rem) rotateY(-34deg) rotateX(5deg);
+      -o-transform: perspective(80rem) rotateY(-34deg) rotateX(5deg);
       transform-style: preserve-3d;
     }
 

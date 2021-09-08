@@ -1,0 +1,39 @@
+.form {
+  margin: 5rem 0;
+  color: $color-grey-dark-4;
+  font-family: "Lato", sans-serif;
+
+  &__group:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__input {
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    color: inherit;
+    border-radius: 2px;
+    background-color: rgba(215, 225, 255, 0.95);
+    border: none;
+    font-family: inherit;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    font-family: inherit;
+    color: $color-grey-dark-4;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid $color-primary;
+      background-color: $color-grey-light-1;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-secondary-dark;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+}

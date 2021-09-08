@@ -1,0 +1,111 @@
+.serviceBox {
+  position: relative;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  z-index: 1;
+  margin-bottom: 3rem;
+  box-shadow: 0px 0.5rem 1.2rem 0rem rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+
+  &:hover {
+    box-shadow: 0px 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+  }
+  &:hover &--title {
+    color: $color-grey-light-1;
+  }
+  &:hover &--desc {
+    color: $color-grey-light-1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #428ae2 30%, #8223ff);
+    transform: scaleY(0);
+    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transform-origin: 0 100%;
+    //bottomtotop:;
+  }
+
+  &:hover::after {
+    transform: scaleY(1);
+    //background: linear-gradient(to bottom, #428ae2, #8223ff);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+
+  &--icon {
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    // background-color: red;
+    background: $color-grey-light-1;
+    margin: 4rem 0 2rem 0;
+
+    span {
+      @include absCenter;
+      font-size: 6rem;
+      //   color: $color-primary;
+      & > * {
+        background-image: linear-gradient(110deg, #463f64, #463f64, #e2285c);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &--title {
+    font-family: "Poppins", serif;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: $color-grey-dark-4;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+  }
+
+  &--desc {
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: $color-grey-dark-3;
+    margin: 1rem 0 4rem 0;
+    transition: all 0.3s ease-out;
+  }
+}

@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+html {
+  font-size: 62.5%; // it is also same as above line 62.5% * 16 = 10px //
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  // padding: 3rem 3rem 0 3rem;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  background-color: $color-grey-light-1;
+}

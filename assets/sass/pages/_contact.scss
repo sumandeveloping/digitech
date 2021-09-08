@@ -1,0 +1,24 @@
+// contact section
+.contact {
+  padding: 6rem 3rem;
+  &__text {
+    margin-bottom: 7rem;
+  }
+
+  &__info {
+    & > * {
+      font-size: 1.8rem;
+      margin: 2rem;
+    }
+
+    &--address,
+    &--phone,
+    &--email {
+      font-weight: 500;
+      span {
+        margin-right: 2rem;
+        color: $color-primary;
+      }
+    }
+  }
+}

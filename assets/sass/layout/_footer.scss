@@ -1,0 +1,133 @@
+.footer {
+  //   position: relative;
+  width: 100%;
+  padding: 3rem 4rem;
+  background: linear-gradient(to bottom, #091a5a 30%, #03053c);
+  height: auto;
+  color: $color-grey-light-1;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  perspective: 100rem;
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--wrapper {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      overflow: hidden;
+      margin: 2rem 0;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        min-width: 100%;
+      }
+    }
+
+    &--quote {
+      font-size: 1.5rem;
+      font-family: "Lora", serif;
+      font-style: italic;
+      color: $color-grey-light-2;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+
+    ul {
+      list-style: none;
+      margin: 0;
+
+      li {
+        margin: 1rem 0;
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+
+        &:hover a {
+          background-color: rgb(55, 66, 214);
+          transform: rotate(5deg) scale(1.2);
+          -webkit-transform: rotate(5deg) scale(1.2);
+          -moz-transform: rotate(5deg) scale(1.2);
+          -ms-transform: rotate(5deg) scale(1.2);
+          -o-transform: rotate(5deg) scale(1.2);
+          color: $color-primary;
+          background-color: $color-grey-light-2;
+          font-weight: 600;
+        }
+
+        a {
+          font-family: "Poppins", serif;
+          text-decoration: none;
+          color: $color-grey-light-2;
+          font-size: 1.4rem;
+          padding: 2px;
+          font-weight: 200;
+          display: inline-block;
+          text-transform: uppercase;
+          transition: all 0.2s ease-out;
+          -webkit-transition: all 0.2s ease-out;
+          -moz-transition: all 0.2s ease-out;
+          -ms-transition: all 0.2s ease-out;
+          -o-transition: all 0.2s ease-out;
+        }
+      }
+    }
+  }
+
+  &__info {
+    color: $color-grey-light-1;
+
+    & > p {
+      margin: 1.5rem 0;
+    }
+
+    &--email,
+    &--phone,
+    &--address {
+      font-size: 1.5rem;
+      span {
+        margin-right: 1.5rem;
+        font-size: 1.3rem;
+      }
+    }
+
+    &--icons {
+      margin-top: 2rem !important;
+      a {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+        display: inline-block;
+        color: $color-grey-light-1;
+        font-size: 2.2rem;
+        transition: transform 0.5s ease-out;
+        transform-style: preserve-3d;
+
+        &:hover {
+          transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -ms-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+}

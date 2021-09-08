@@ -1,0 +1,104 @@
+.team {
+  width: 100%;
+  position: relative;
+
+  &:hover &__overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  &__img {
+    width: 100%;
+    // height: 40rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform-origin: center center;
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -ms-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    ul {
+      position: absolute;
+      @include absCenter;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        a {
+          display: inline-block;
+          text-decoration: none;
+          padding: 1rem;
+          color: $color-grey-light-1;
+          font-size: 2.5rem;
+          transition: all 0.25s ease-in-out;
+          -webkit-transition: all 0.25s ease-in-out;
+          -moz-transition: all 0.25s ease-in-out;
+          -ms-transition: all 0.25s ease-in-out;
+          -o-transition: all 0.25s ease-in-out;
+
+          &:hover {
+            transform: translateY(-5px) scale(1.1);
+            -webkit-transform: translateY(-5px) scale(1.1);
+            -moz-transform: translateY(-5px) scale(1.1);
+            -ms-transform: translateY(-5px) scale(1.1);
+            -o-transform: translateY(-5px) scale(1.1);
+            color: #4282f7;
+          }
+        }
+      }
+    }
+  }
+
+  &__desc {
+    text-align: center;
+
+    &--name {
+      font-size: 2rem;
+      font-family: "Lato", serif;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin: 1rem;
+      color: $color-grey-dark-3;
+    }
+    &--category {
+      font-size: 1.3rem;
+      color: $color-primary;
+      //   font-family: "Lato", sans-serif;
+      font-family: "Lora", serif;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+}

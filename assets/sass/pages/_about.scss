@@ -1,0 +1,68 @@
+.aboutUs {
+  padding: 6rem 3rem 3rem 3rem;
+  width: 100%;
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+  &__info,
+  &__img {
+    margin-bottom: 8rem;
+    padding: 1.5rem;
+  }
+  &__info {
+    text-align: left;
+    p {
+      font-size: 1.4rem;
+      color: $color-grey-dark-4;
+      font-family: "Lato", sans-serif;
+      margin-bottom: 2rem;
+    }
+
+    &--list {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        &:not(:last-child) {
+          margin-right: 4rem;
+          margin-left: 2rem;
+        }
+      }
+
+      h6 {
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: "Poppins", serif;
+        text-transform: capitalize;
+        margin: 2rem 2rem 2rem 0;
+
+        span {
+          font-size: 1.8rem;
+          color: $color-primary;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Team section
+.our-team {
+  padding: 4rem 3rem 3rem 3rem;
+  width: 100%;
+}

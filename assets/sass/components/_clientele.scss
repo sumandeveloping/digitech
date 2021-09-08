@@ -1,0 +1,48 @@
+.clientele {
+  cursor: pointer;
+
+  &:hover &__img {
+    border: 2px solid $color-primary;
+  }
+  &:hover &__img img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+  }
+  padding: 2rem 0;
+  &__img {
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 14rem !important;
+    height: 14rem !important;
+    border: 2px solid #dfdddd;
+    overflow: hidden;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+
+    img {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      transition: filter 0.25s ease-out, transform 0.5s ease-out;
+      -webkit-transition: filter 0.25s ease-out, transform 0.5s ease-out;
+      -moz-transition: filter 0.25s ease-out, transform 0.5s ease-out;
+      -ms-transition: filter 0.25s ease-out, transform 0.5s ease-out;
+      -o-transition: filter 0.25s ease-out, transform 0.5s ease-out;
+    }
+  }
+}

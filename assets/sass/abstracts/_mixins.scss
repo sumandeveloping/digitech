@@ -1,0 +1,22 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin lora-font-white {
+  font-family: "Lora", serif;
+  color: $color-grey-light-1;
+}
+@mixin poppins-font-white {
+  font-family: "Poppins", serif;
+  color: $color-grey-light-1;
+}
+@mixin poppins-font-black {
+  font-family: "Poppins", serif;
+  color: $color-grey-dark-3;
+}
+@mixin lato-font-white {
+  font-family: "Lato", sans-serif;
+  color: $color-grey-light-1;
+}

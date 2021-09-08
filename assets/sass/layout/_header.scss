@@ -1,0 +1,53 @@
+header {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+  padding: 3rem 3rem 0 3rem;
+  .navbar {
+    a.navbar-brand {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $color-primary;
+    }
+    ul.navbar-nav {
+      li.nav-item {
+        margin: 0 1.8rem;
+
+        //hover state
+        &:hover a.nav-link {
+          color: $color-primary;
+        }
+        &:hover a.nav-link::after {
+          width: 100%;
+        }
+
+        a.nav-link {
+          position: relative;
+          color: rgb(14, 13, 13);
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            bottom: -5px;
+            right: 0;
+            left: 0;
+            height: 2px;
+            z-index: 1;
+            transition: all 0.4s ease-out;
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -ms-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+            background: $color-primary;
+          }
+          &.menu_active {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -20,3 +20,47 @@
   font-family: "Lato", sans-serif;
   color: $color-grey-light-1;
 }
+
+// MEDI QUERY MANAGER
+/*
+0 - 576px (36em)          phone
+577 (36.06em)  - 768px (48em)         Tablet portrait
+769 (48.06em) - 992px (62em)        Tablet landscape
+993 ()62.06em - 1200 (75em)        laptop
+1201 - 1800px       iswhere our normal styles apply 
+1800 (112.5) +      Big desktop 
+*/
+
+//1em = 16px
+@mixin respond($breakpoint) {
+  //for phone (576px max)
+  @if $breakpoint == phone {
+    @media screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  //for tablet portrait (768px max)
+  @if $breakpoint == tab-port {
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      @content;
+    }
+  }
+  //for tablet landscape (992 px max)
+  @if $breakpoint == tab-land {
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      @content;
+    }
+  }
+  //for tablet laptop (1200 px max)
+  @if $breakpoint == laptop {
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+      @content;
+    }
+  }
+  //for big desktop (1800px min)
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}

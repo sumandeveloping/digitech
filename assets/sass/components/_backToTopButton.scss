@@ -23,6 +23,12 @@
   -ms-transition: background 0.5s ease-in;
   -o-transition: background 0.5s ease-in;
 
+  @include respond(phone) {
+    right: 4rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
   &:hover {
     background: linear-gradient(to bottom, $violet-1 30%, #428ae2);
     background: -webkit-linear-gradient(to bottom, $violet-1 30%, #428ae2);
@@ -32,5 +38,9 @@
     @include absCenter;
     color: $color-grey-light-1;
     font-size: 3rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 }

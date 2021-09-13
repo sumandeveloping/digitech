@@ -7,6 +7,14 @@
   ); // it defines all column size
   grid-auto-rows: 40rem; // it defines all row size
   grid-auto-flow: row dense;
+
+  @include respond(phone) {
+    grid-gap: 3rem;
+  }
+  @include respond(tab-port) {
+    grid-gap: 3.2rem;
+  }
+
   .grid {
     background: linear-gradient(to bottom, #428ae2 30%, $violet-1);
     background: -webkit-linear-gradient(to bottom, #428ae2 30%, $violet-1);

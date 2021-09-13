@@ -11,7 +11,15 @@
   background-repeat: no-repeat;
   position: relative;
 
+  @include respond(phone) {
+    height: 60vh;
+  }
+  @include respond(tab-port) {
+    height: 70vh;
+  }
+
   &__text-box {
+    width: 80%;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -25,6 +33,16 @@
   padding: 1rem;
   height: 30rem;
   width: 100%;
+
+  @include respond(phone) {
+    height: 50rem;
+  }
+  @include respond(tab-port) {
+    height: 50rem;
+  }
+  @include respond(tab-land) {
+    height: 50rem;
+  }
 }
 
 // about us section
@@ -32,13 +50,40 @@
   padding: 5rem 3rem;
   width: 100%;
 
+  @include respond(phone) {
+    padding: 10rem 3rem 3rem 5rem;
+  }
+
   &__column--right {
     padding: 0 1rem 0 4rem;
+
+    @include respond(phone) {
+      margin-top: 2rem;
+      padding: 0 1rem 0 0;
+    }
+    @include respond(tab-port) {
+      margin-top: 3rem;
+      padding: 0 1rem 0 0;
+    }
+    @include respond(tab-land) {
+      margin-top: 3rem;
+      padding: 0 1rem 0 0;
+    }
   }
   &__number {
     display: flex;
     flex-direction: column;
     margin-top: 3.5rem;
+
+    @include respond(phone) {
+      margin-top: 5.5rem;
+    }
+    @include respond(tab-port) {
+      margin-top: 6.5rem;
+    }
+    @include respond(tab-land) {
+      margin-top: 6.5rem;
+    }
   }
   div[class^="aboutUs__number--"] {
     display: flex;
@@ -46,10 +91,38 @@
     align-items: flex-start;
     margin-bottom: 2rem;
 
+    @include respond(phone) {
+      flex-direction: row;
+      align-items: center;
+    }
+    @include respond(tab-port) {
+      flex-direction: row;
+      align-items: center;
+    }
+    @include respond(tab-land) {
+      flex-direction: row;
+      align-items: center;
+    }
+
     h2 {
       font-size: 5rem;
       color: $color-primary-light-1;
       font-family: "Lora", serif;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+        margin-right: 4rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 4rem;
+        margin-right: 6rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 4rem;
+        margin-right: 6rem;
+      }
     }
   }
 
@@ -59,11 +132,39 @@
     justify-content: center;
     margin-top: 5rem;
 
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+    @include respond(laptop) {
+      flex-direction: column;
+    }
+
     & > div {
       flex: 1;
+      @include respond(phone) {
+        flex: auto;
+      }
+      @include respond(tab-port) {
+        flex: auto;
+      }
+      @include respond(tab-land) {
+        flex: auto;
+      }
+      @include respond(laptop) {
+        flex: auto;
+      }
     }
 
     &--left {
+      outline: 2px solid #3f6ef5;
+      outline-offset: 5px;
       background-image: url("../../images/about1.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -76,6 +177,23 @@
       -moz-transition: filter 0.25s ease-in;
       -ms-transition: filter 0.25s ease-in;
       -o-transition: filter 0.25s ease-in;
+
+      @include respond(phone) {
+        height: 35rem;
+        margin-bottom: 4rem;
+      }
+      @include respond(tab-port) {
+        height: 40rem;
+        margin-bottom: 4rem;
+      }
+      @include respond(tab-land) {
+        height: 50rem;
+        margin-bottom: 4rem;
+      }
+      @include respond(laptop) {
+        height: 40rem;
+        margin-bottom: 4rem;
+      }
       &:hover {
         filter: brightness(1);
         -webkit-filter: brightness(1);
@@ -85,6 +203,23 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include respond(phone) {
+        margin-bottom: 6rem;
+        align-items: flex-start;
+      }
+      @include respond(tab-port) {
+        margin-bottom: 6rem;
+        align-items: flex-start;
+      }
+      @include respond(tab-land) {
+        margin-bottom: 7rem;
+        align-items: flex-start;
+      }
+      @include respond(laptop) {
+        margin-bottom: 4rem;
+        align-items: flex-start;
+      }
     }
     &--info {
       ul {
@@ -92,12 +227,39 @@
         li {
           font-size: 1.8rem;
           margin: 1.5rem 0;
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+          @include respond(tab-port) {
+            font-size: 2.2rem;
+          }
+          @include respond(tab-land) {
+            font-size: 2.2rem;
+          }
+          @include respond(laptop) {
+            font-size: 2rem;
+          }
           span {
             color: $color-primary-light-1;
             font-family: "Poppins", serif;
             text-transform: capitalize;
             margin-right: 2rem;
             font-size: 1.8rem;
+
+            @include respond(phone) {
+              font-size: 2rem;
+              margin-right: 4rem;
+            }
+            @include respond(tab-port) {
+              font-size: 2.2rem;
+            }
+            @include respond(tab-land) {
+              font-size: 2.2rem;
+            }
+            @include respond(laptop) {
+              font-size: 2.3rem;
+            }
           }
         }
       }
@@ -109,6 +271,10 @@
 .services {
   padding: 6rem 3rem;
   width: 100%;
+
+  @include respond(phone) {
+    padding: 6rem 3rem 8rem 3rem;
+  }
 
   &__text {
     margin-bottom: 7rem;
@@ -173,4 +339,11 @@
   padding: 6rem 3rem 8rem 3rem;
   width: 100%;
   margin-bottom: 239px; // For footer to reveal
+
+  @include respond(phone) {
+    margin-bottom: 397px; // For footer to reveal
+  }
+  @include respond(tab-port) {
+    margin-bottom: 397px; // For footer to reveal
+  }
 }

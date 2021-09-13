@@ -62,6 +62,10 @@
     font-weight: 400;
     color: $color-grey-dark-4;
     font-family: "Lora", serif;
+
+    @include respond(tab-land) {
+      font-size: 1.6rem;
+    }
   }
   &__name {
     font-size: 2rem;

@@ -10,10 +10,24 @@
 html {
   font-size: 62.5%; // it is also same as above line 62.5% * 16 = 10px //
   scroll-behavior: smooth;
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px;  8/16 = 50%
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px;  9/16 = 56.25%
+  }
+  @include respond(big-desktop) {
+    font-size: 68.75%; // 1rem = 11px;  11/16 = 68.75%
+  }
 }
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   // padding: 3rem 3rem 0 3rem;
 }
 

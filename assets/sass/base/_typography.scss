@@ -7,6 +7,15 @@
   font-family: "Lora", serif;
   font-style: italic;
   margin-bottom: 2rem;
+  @include respond(phone) {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  //responsive
+  @include respond(tab-port) {
+    font-size: 2.8rem;
+  }
 }
 .banner-heading {
   position: relative;
@@ -15,14 +24,26 @@
   text-transform: uppercase;
   color: $color-grey-light-1;
   font-weight: 700;
-  line-height: 7rem;
+  line-height: 6rem;
   letter-spacing: 1.5px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 4rem;
 
+  //responsive
+  @include respond(phone) {
+    line-height: 4rem;
+    font-size: 2.2rem;
+    margin-bottom: 8rem;
+  }
+  //responsive
+  @include respond(tab-port) {
+    font-size: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
   &--sub {
-    // color: $color-primary-light-1;
-    color: #a460ff;
+    color: $color-grey-light-1;
+    display: block;
   }
 }
 
@@ -51,6 +72,22 @@
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+    margin: 4rem 0;
+  }
+  @include respond(tab-port) {
+    font-size: 3rem;
+    margin: 4rem 0;
+  }
+  @include respond(tab-land) {
+    font-size: 3.2rem;
+    margin: 4rem 0;
+  }
+  @include respond(laptop) {
+    font-size: 3.2rem;
   }
 }
 .secondary-heading-big {
@@ -86,7 +123,7 @@
   display: block;
 }
 .tartiary-heading {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-family: "Poppins", serif;
   color: $color-grey-dark-4;
   display: block;
@@ -95,6 +132,20 @@
   position: relative;
   margin: 0;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
+  }
+  @include respond(tab-land) {
+    font-size: 1.8rem;
+  }
+  @include respond(laptop) {
+    font-size: 1.6rem;
+  }
 
   &::after {
     position: absolute;

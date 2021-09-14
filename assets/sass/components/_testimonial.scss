@@ -63,8 +63,14 @@
     color: $color-grey-dark-4;
     font-family: "Lora", serif;
 
-    @include respond(tab-land) {
+    @include respond(phone) {
       font-size: 1.6rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+    }
+    @include respond(tab-land) {
+      font-size: 1.8rem;
     }
   }
   &__name {

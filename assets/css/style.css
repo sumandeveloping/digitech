@@ -551,9 +551,27 @@ section {
       margin: 1.5rem 0;
       font-size: 1.8rem;
       text-transform: uppercase; }
+      @media screen and (max-width: 576px) {
+        .workBox__desc--category {
+          font-size: 2rem; } }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .workBox__desc--category {
+          font-size: 2rem; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .workBox__desc--category {
+          font-size: 2rem; } }
     .workBox__desc--title {
       margin: 1.5rem 0;
       font-family: "Lato", sans-serif; }
+      @media screen and (max-width: 576px) {
+        .workBox__desc--title {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .workBox__desc--title {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .workBox__desc--title {
+          font-size: 1.8rem; } }
 
 .testimonialBox {
   border-radius: 2.5rem;
@@ -606,9 +624,15 @@ section {
     font-weight: 400;
     color: #1d1c1c;
     font-family: "Lora", serif; }
-    @media screen and (max-width: 992px) and (min-width: 769px) {
+    @media screen and (max-width: 576px) {
       .testimonialBox__text {
         font-size: 1.6rem; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .testimonialBox__text {
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .testimonialBox__text {
+        font-size: 1.8rem; } }
   .testimonialBox__name {
     font-size: 2rem;
     font-weight: 400;
@@ -690,10 +714,28 @@ section {
           color: #f7f7f7; }
         .grid-container .grid__overlay--text a {
           font-size: 2.5rem; }
+          @media screen and (max-width: 576px) {
+            .grid-container .grid__overlay--text a {
+              font-size: 3.5rem; } }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .grid-container .grid__overlay--text a {
+              font-size: 3.5rem; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .grid-container .grid__overlay--text a {
+              font-size: 3.5rem; } }
         .grid-container .grid__overlay--text h6 {
           font-size: 1.6rem;
           text-transform: uppercase;
           margin-top: 2.5rem; }
+          @media screen and (max-width: 576px) {
+            .grid-container .grid__overlay--text h6 {
+              font-size: 2rem; } }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .grid-container .grid__overlay--text h6 {
+              font-size: 2rem; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .grid-container .grid__overlay--text h6 {
+              font-size: 2rem; } }
 
 .clientele {
   cursor: pointer;
@@ -953,6 +995,115 @@ section {
     -o-object-fit: cover;
     object-fit: cover;
     display: none; }
+
+.priceBox {
+  display: block;
+  position: relative;
+  height: auto;
+  z-index: 1;
+  margin: 1rem 0 2rem 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2); }
+  .priceBox__text {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); }
+    @media screen and (max-width: 576px) {
+      .priceBox__text {
+        height: 25rem; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .priceBox__text {
+        height: 30rem; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .priceBox__text {
+        height: 30rem; } }
+    .priceBox__text--gold {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../images/priceBox2.jpg); }
+    .priceBox__text--platinum {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#6bbb51), to(#3ea21d)), url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #6bbb51, #3ea21d), url(../../images/priceBox2.jpg); }
+    .priceBox__text--diamond {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#e254fb), to(#c810de)), url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #e254fb, #c810de), url(../../images/priceBox2.jpg); }
+    .priceBox__text--starter {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../images/priceBox2.jpg); }
+    .priceBox__text--premium {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#ff4671), to(#ce1943)), url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #ff4671, #ce1943), url(../../images/priceBox2.jpg); }
+    .priceBox__text h4 {
+      color: #f7f7f7;
+      padding: 1rem 2rem;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      @media screen and (max-width: 576px) {
+        .priceBox__text h4 {
+          font-size: 3.5rem; } }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .priceBox__text h4 {
+          font-size: 4.5rem; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .priceBox__text h4 {
+          font-size: 3.5rem; } }
+      .priceBox__text h4.bg-gold {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(228, 93, 22, 0.85)));
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(228, 93, 22, 0.85)); }
+      .priceBox__text h4.bg-platinum {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(36, 232, 13, 0.85)), to(rgba(49, 140, 11, 0.85)));
+        background-image: linear-gradient(to right bottom, rgba(36, 232, 13, 0.85), rgba(49, 140, 11, 0.85)); }
+      .priceBox__text h4.bg-diamond {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(249, 76, 228, 0.85)), to(rgba(195, 13, 182, 0.85)));
+        background-image: linear-gradient(to right bottom, rgba(249, 76, 228, 0.85), rgba(195, 13, 182, 0.85)); }
+      .priceBox__text h4.bg-starter {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.85)), to(rgba(86, 67, 250, 0.85)));
+        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      .priceBox__text h4.bg-premium {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(247, 73, 73, 0.85)), to(rgba(217, 7, 46, 0.85)));
+        background-image: linear-gradient(to right bottom, rgba(247, 73, 73, 0.85), rgba(217, 7, 46, 0.85)); }
+  .priceBox__price {
+    padding: 4rem 3rem 0rem 3rem;
+    text-align: center; }
+    .priceBox__price h4 {
+      color: #1d1c1c;
+      font-size: 6rem;
+      font-weight: 100; }
+      .priceBox__price h4 span {
+        font-size: 3rem;
+        display: inline-block;
+        transform: translateY(-35px);
+        -webkit-transform: translateY(-35px);
+        -moz-transform: translateY(-35px);
+        -ms-transform: translateY(-35px);
+        -o-transform: translateY(-35px); }
+  .priceBox__content {
+    padding: 3rem; }
+    .priceBox__content ul {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0 0 0;
+      list-style: none; }
+      .priceBox__content ul li {
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem 1rem;
+        color: #777; }
+        @media screen and (max-width: 576px) {
+          .priceBox__content ul li {
+            font-size: 2rem; } }
+        @media screen and (max-width: 768px) and (min-width: 577px) {
+          .priceBox__content ul li {
+            font-size: 2.4rem; } }
+        .priceBox__content ul li:not(:last-child) {
+          border-bottom: 1px solid rgba(192, 192, 192, 0.31); }
 
 header {
   font-size: 1.6rem;
@@ -1494,14 +1645,27 @@ header {
     @media screen and (max-width: 576px) {
       .contact__text {
         margin-bottom: 2rem; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .contact__text {
+        margin-bottom: 2rem; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .contact__text {
+        margin-bottom: 1rem; } }
   @media screen and (max-width: 576px) {
     .contact__info {
-      margin-bottom: 6rem; } }
+      margin-bottom: 4rem; } }
+  @media screen and (max-width: 768px) and (min-width: 577px) {
+    .contact__info {
+      margin-bottom: 4rem; } }
+  @media screen and (max-width: 992px) and (min-width: 769px) {
+    .contact__info {
+      margin-bottom: 4rem; } }
   .contact__info > * {
     font-size: 1.8rem;
-    margin: 2rem; }
+    margin: 2rem 0; }
   .contact__info--address, .contact__info--phone, .contact__info--email {
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 2rem; }
     .contact__info--address span, .contact__info--phone span, .contact__info--email span {
       margin-right: 2rem;
       color: #1e3bca; }
@@ -1509,10 +1673,13 @@ header {
     margin-bottom: 3rem; }
     @media screen and (max-width: 576px) {
       .contact__map {
-        margin: 3rem 2rem; } }
+        margin: 3rem 0; } }
     @media screen and (max-width: 768px) and (min-width: 577px) {
       .contact__map {
-        margin: 3rem 2rem; } }
+        margin: 3rem 0; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .contact__map {
+        margin: 2rem 0; } }
     .contact__map .map-img {
       width: 100%;
       padding: 1rem 2rem; }
@@ -1540,12 +1707,80 @@ header {
     background-size: cover;
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../images/contact_enquiry3.jpg");
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    @media screen and (max-width: 576px) {
+      .enquiry__wrapper {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../../images/contact_enquiry3.jpg");
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .enquiry__wrapper {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../../images/contact_enquiry3.jpg");
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .enquiry__wrapper {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../../images/contact_enquiry3.jpg");
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); } }
   .enquiry__form {
     width: 50%;
     padding: 3rem 4rem; }
+    @media screen and (max-width: 576px) {
+      .enquiry__form {
+        width: 100%; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .enquiry__form {
+        width: 100%; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .enquiry__form {
+        width: 100%; } }
     .enquiry__form h4 {
       color: #1e3bca;
       font-family: "Poppins", serif;
       font-size: 3rem;
       text-transform: uppercase;
       letter-spacing: 1px; }
+
+.package {
+  padding: 8rem 3rem 3rem 3rem;
+  width: 100%; }
+  .package__text {
+    margin-bottom: 4rem; }
+    @media screen and (max-width: 576px) {
+      .package__text {
+        margin-bottom: 2rem; } }
+  .package__navbar {
+    justify-content: flex-start; }
+    .package__navbar ul li {
+      font-size: 1.8rem; }
+      @media screen and (max-width: 576px) {
+        .package__navbar ul li {
+          font-size: 1.6rem;
+          margin: 0 1rem 2rem 0; } }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .package__navbar ul li {
+          font-size: 2rem;
+          margin: 0 1rem 2rem 0; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .package__navbar ul li {
+          font-size: 2rem;
+          margin: 0 1rem 0 0; } }
+      .package__navbar ul li a {
+        color: #1d1c1c;
+        padding: 1.5rem 2rem; }
+        @media screen and (max-width: 576px) {
+          .package__navbar ul li a {
+            padding: 1rem 1.5rem; } }
+        .package__navbar ul li a.active {
+          background-color: #1d1c1c !important; }
+  .package__container {
+    position: relative;
+    overflow-y: scroll;
+    height: 58rem;
+    margin: 5rem 0; }
+    @media screen and (max-width: 576px) {
+      .package__container {
+        height: 60rem; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .package__container {
+        height: 70rem; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .package__container {
+        height: 80rem; } }

@@ -143,10 +143,33 @@
       margin: 1.5rem 0;
       font-size: 1.8rem;
       text-transform: uppercase;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
     }
     &--title {
       margin: 1.5rem 0;
       font-family: "Lato", sans-serif;
+
+      @include respond(phone) {
+        font-size: 1.8rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

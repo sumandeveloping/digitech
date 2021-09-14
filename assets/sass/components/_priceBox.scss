@@ -1,0 +1,236 @@
+.priceBox {
+  display: block;
+  position: relative;
+  height: auto;
+  z-index: 1;
+  margin: 1rem 0 2rem 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+
+  &__text {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+
+    @include respond(phone) {
+      height: 25rem;
+    }
+    @include respond(tab-port) {
+      height: 30rem;
+    }
+    @include respond(tab-land) {
+      height: 30rem;
+    }
+
+    &--gold {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(#ffb900),
+          to(#ff7730)
+        ),
+        url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+        url(../../images/priceBox2.jpg);
+    }
+
+    &--platinum {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(#6bbb51),
+          to(#3ea21d)
+        ),
+        url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #6bbb51, #3ea21d),
+        url(../../images/priceBox2.jpg);
+    }
+
+    &--diamond {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(#e254fb),
+          to(#c810de)
+        ),
+        url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #e254fb, #c810de),
+        url(../../images/priceBox2.jpg);
+    }
+
+    &--starter {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(#2998ff),
+          to(#5643fa)
+        ),
+        url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+        url(../../images/priceBox2.jpg);
+    }
+
+    &--premium {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(#ff4671),
+          to(#ce1943)
+        ),
+        url(../../images/priceBox2.jpg);
+      background-image: linear-gradient(to right bottom, #ff4671, #ce1943),
+        url(../../images/priceBox2.jpg);
+    }
+
+    h4 {
+      color: $color-grey-light-1;
+      padding: 1rem 2rem;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
+      @include respond(tab-port) {
+        font-size: 4.5rem;
+      }
+      @include respond(tab-land) {
+        font-size: 3.5rem;
+      }
+
+      &.bg-gold {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(rgba(255, 185, 0, 0.85)),
+          to(rgba(228, 93, 22, 0.85))
+        );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(255, 185, 0, 0.85),
+          rgba(228, 93, 22, 0.85)
+        );
+      }
+
+      &.bg-platinum {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(rgba(36, 232, 13, 0.85)),
+          to(rgba(49, 140, 11, 0.85))
+        );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(36, 232, 13, 0.85),
+          rgba(49, 140, 11, 0.85)
+        );
+      }
+      &.bg-diamond {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(rgba(249, 76, 228, 0.85)),
+          to(rgba(195, 13, 182, 0.85))
+        );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(249, 76, 228, 0.85),
+          rgba(195, 13, 182, 0.85)
+        );
+      }
+      &.bg-starter {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(rgba(41, 152, 255, 0.85)),
+          to(rgba(86, 67, 250, 0.85))
+        );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(41, 152, 255, 0.85),
+          rgba(86, 67, 250, 0.85)
+        );
+      }
+      &.bg-premium {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(rgba(247, 73, 73, 0.85)),
+          to(rgba(217, 7, 46, 0.85))
+        );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(247, 73, 73, 0.85),
+          rgba(217, 7, 46, 0.85)
+        );
+      }
+    }
+  }
+
+  &__price {
+    padding: 4rem 3rem 0rem 3rem;
+    text-align: center;
+
+    h4 {
+      color: $color-grey-dark-4;
+      font-size: 6rem;
+      font-weight: 100;
+
+      span {
+        font-size: 3rem;
+        display: inline-block;
+        transform: translateY(-35px);
+        -webkit-transform: translateY(-35px);
+        -moz-transform: translateY(-35px);
+        -ms-transform: translateY(-35px);
+        -o-transform: translateY(-35px);
+      }
+    }
+  }
+
+  &__content {
+    padding: 3rem;
+    ul {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0 0 0;
+      list-style: none;
+
+      li {
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem 1rem;
+        color: $color-grey-dark;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+        @include respond(tab-port) {
+          font-size: 2.4rem;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(192, 192, 192, 0.31);
+        }
+      }
+    }
+  }
+}

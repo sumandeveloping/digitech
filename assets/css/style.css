@@ -1784,3 +1784,293 @@ header {
     @media screen and (max-width: 992px) and (min-width: 769px) {
       .package__container {
         height: 80rem; } }
+
+.work {
+  padding: 6rem 3rem; }
+  .work__text {
+    margin-bottom: 7rem; }
+    .work__text .breadcrumb {
+      font-size: 1.8rem; }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .work__text .breadcrumb {
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .work__text .breadcrumb {
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 1200px) and (min-width: 993px) {
+        .work__text .breadcrumb {
+          font-size: 2rem; } }
+      .work__text .breadcrumb-item {
+        color: #1e3bca;
+        text-transform: capitalize; }
+        .work__text .breadcrumb-item.active {
+          color: #777; }
+    @media screen and (max-width: 576px) {
+      .work__text {
+        margin-bottom: 2rem; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .work__text {
+        margin-bottom: 4rem; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .work__text {
+        margin-bottom: 3rem; } }
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+      .work__text {
+        margin-bottom: 4rem; } }
+  .work__img {
+    width: 100%;
+    height: 30rem;
+    position: relative; }
+    @media screen and (max-width: 576px) {
+      .work__img {
+        height: 35rem;
+        margin-bottom: 3rem; } }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .work__img {
+        height: 40rem;
+        margin-bottom: 3rem; } }
+    .work__img img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+  .work__desc--title {
+    color: #1e3bca;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 2.5rem; }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .work__desc--title {
+        font-size: 2.8rem; } }
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+      .work__desc--title {
+        font-size: 2.8rem; } }
+  .work__desc--date {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 400;
+    font-style: italic;
+    color: #949494; }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .work__desc--date {
+        font-size: 2.6rem; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .work__desc--date {
+        font-size: 2.6rem; } }
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+      .work__desc--date {
+        font-size: 2.4rem; } }
+  .work__desc--info {
+    font-size: 1.8rem;
+    margin: 2.5rem 0;
+    font-weight: 400;
+    line-height: 1.7; }
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+      .work__desc--info {
+        font-size: 2.2rem; } }
+  .work__details {
+    margin: 3.5rem 0; }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .work__details {
+        font-size: 5rem; } }
+    .work__details ul {
+      font-size: 2rem;
+      margin-bottom: 2.5rem; }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .work__details ul {
+          font-size: 2.4rem; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .work__details ul {
+          font-size: 2.2rem; } }
+      .work__details ul li a {
+        color: #1e3bca; }
+    .work__details #myTabContent p {
+      font-size: 1.8rem;
+      line-height: 1.7; }
+      @media screen and (max-width: 768px) and (min-width: 577px) {
+        .work__details #myTabContent p {
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .work__details #myTabContent p {
+          font-size: 2rem; } }
+    .work__details #myTabContent .member-wrapper {
+      width: 100%;
+      position: relative;
+      margin-top: 3rem;
+      display: flex;
+      flex-flow: row wrap; }
+      .work__details #myTabContent .member-wrapper .member {
+        width: 20rem;
+        height: 20rem;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 2rem; }
+        .work__details #myTabContent .member-wrapper .member:not(:last-child) {
+          margin-right: 2rem; }
+        .work__details #myTabContent .member-wrapper .member__img {
+          width: 100%;
+          position: relative;
+          z-index: 1;
+          object-fit: cover; }
+        .work__details #myTabContent .member-wrapper .member__overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.65);
+          opacity: 0;
+          transition: all 0.25s ease-out;
+          -webkit-transition: all 0.25s ease-out;
+          -moz-transition: all 0.25s ease-out;
+          -ms-transition: all 0.25s ease-out;
+          -o-transition: all 0.25s ease-out; }
+          .work__details #myTabContent .member-wrapper .member__overlay-name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #f7f7f7;
+            font-size: 2rem;
+            text-transform: capitalize; }
+      .work__details #myTabContent .member-wrapper .member:hover .member__overlay {
+        opacity: 1; }
+    .work__details #myTabContent .review-wrapper {
+      width: 100%;
+      position: relative;
+      margin-top: 3rem;
+      display: flex;
+      flex-flow: column wrap; }
+      .work__details #myTabContent .review-wrapper .review {
+        display: flex;
+        flex-direction: row; }
+        .work__details #myTabContent .review-wrapper .review:not(:last-child) {
+          margin-bottom: 2rem; }
+          @media screen and (max-width: 576px) {
+            .work__details #myTabContent .review-wrapper .review:not(:last-child) {
+              margin-bottom: 3rem; } }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .work__details #myTabContent .review-wrapper .review:not(:last-child) {
+              margin-bottom: 3rem; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .work__details #myTabContent .review-wrapper .review:not(:last-child) {
+              margin-bottom: 3rem; } }
+        .work__details #myTabContent .review-wrapper .review__img {
+          width: 20rem;
+          height: 15rem;
+          position: relative;
+          cursor: pointer;
+          margin-right: 3rem; }
+          @media screen and (max-width: 576px) {
+            .work__details #myTabContent .review-wrapper .review__img {
+              width: 30rem;
+              height: 15rem;
+              margin-right: 1rem; } }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .work__details #myTabContent .review-wrapper .review__img {
+              width: 40rem;
+              height: 15rem;
+              margin-right: 1rem; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .work__details #myTabContent .review-wrapper .review__img {
+              width: 30rem;
+              height: 15rem;
+              margin-right: 1rem; } }
+          .work__details #myTabContent .review-wrapper .review__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+            @media screen and (max-width: 576px) {
+              .work__details #myTabContent .review-wrapper .review__img img {
+                height: auto; } }
+            @media screen and (max-width: 768px) and (min-width: 577px) {
+              .work__details #myTabContent .review-wrapper .review__img img {
+                height: auto; } }
+            @media screen and (max-width: 992px) and (min-width: 769px) {
+              .work__details #myTabContent .review-wrapper .review__img img {
+                height: auto; } }
+            @media screen and (max-width: 1200px) and (min-width: 993px) {
+              .work__details #myTabContent .review-wrapper .review__img img {
+                height: auto; } }
+        .work__details #myTabContent .review-wrapper .review__content {
+          padding: 0.5rem 1rem; }
+          @media screen and (max-width: 576px) {
+            .work__details #myTabContent .review-wrapper .review__content {
+              padding: 0 1rem; } }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .work__details #myTabContent .review-wrapper .review__content {
+              padding: 0 1.2rem; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .work__details #myTabContent .review-wrapper .review__content {
+              padding: 0 1.8rem; } }
+        .work__details #myTabContent .review-wrapper .review__desc {
+          font-style: italic;
+          font-size: 1.8rem;
+          color: #949494;
+          line-height: 1.6;
+          margin-bottom: 2rem; }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .work__details #myTabContent .review-wrapper .review__desc {
+              font-size: 2rem;
+              margin-bottom: 1.5rem; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .work__details #myTabContent .review-wrapper .review__desc {
+              font-size: 1.8rem;
+              margin-bottom: 0rem; } }
+          @media screen and (max-width: 1200px) and (min-width: 993px) {
+            .work__details #myTabContent .review-wrapper .review__desc {
+              font-size: 1.8rem;
+              margin-bottom: 1.5rem; } }
+        .work__details #myTabContent .review-wrapper .review__rating {
+          margin: 1rem 0; }
+          @media screen and (max-width: 768px) and (min-width: 577px) {
+            .work__details #myTabContent .review-wrapper .review__rating {
+              margin: 2rem 0; } }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .work__details #myTabContent .review-wrapper .review__rating {
+              margin: 0rem 0 1rem 0; } }
+          @media screen and (max-width: 1200px) and (min-width: 993px) {
+            .work__details #myTabContent .review-wrapper .review__rating {
+              margin: 1.5rem 0; } }
+          .work__details #myTabContent .review-wrapper .review__rating svg {
+            font-size: 1.4rem; }
+            @media screen and (max-width: 576px) {
+              .work__details #myTabContent .review-wrapper .review__rating svg {
+                font-size: 1.2rem; } }
+            @media screen and (max-width: 768px) and (min-width: 577px) {
+              .work__details #myTabContent .review-wrapper .review__rating svg {
+                font-size: 1.4rem; } }
+          .work__details #myTabContent .review-wrapper .review__rating svg.gold {
+            color: orange; }
+        .work__details #myTabContent .review-wrapper .review__author {
+          margin: 1rem 0; }
+          .work__details #myTabContent .review-wrapper .review__author--name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            text-transform: capitalize; }
+            @media screen and (max-width: 768px) and (min-width: 577px) {
+              .work__details #myTabContent .review-wrapper .review__author--name {
+                font-size: 2.8rem; } }
+            @media screen and (max-width: 992px) and (min-width: 769px) {
+              .work__details #myTabContent .review-wrapper .review__author--name {
+                font-size: 2.8rem;
+                margin-bottom: 1.5rem; } }
+            @media screen and (max-width: 1200px) and (min-width: 993px) {
+              .work__details #myTabContent .review-wrapper .review__author--name {
+                font-size: 2.5rem; } }
+          .work__details #myTabContent .review-wrapper .review__author--info {
+            font-size: 1.8rem;
+            font-weight: 400; }
+            @media screen and (max-width: 768px) and (min-width: 577px) {
+              .work__details #myTabContent .review-wrapper .review__author--info {
+                font-size: 2rem; } }
+            @media screen and (max-width: 992px) and (min-width: 769px) {
+              .work__details #myTabContent .review-wrapper .review__author--info {
+                font-size: 2rem; } }
+            @media screen and (max-width: 1200px) and (min-width: 993px) {
+              .work__details #myTabContent .review-wrapper .review__author--info {
+                font-size: 1.8rem; } }
